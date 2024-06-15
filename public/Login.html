@@ -3,10 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Login</title>
         <link rel="stylesheet" href="../src/css/Login.css" />
     </head>
     <body>
+        <header>
+            <div id="header">
+                <a href="../public/MainHome.html"><img src="../src/assets/images/Preview.png" /></a>
+            </div>
+        </header>
+        <article>
+            <form action="../public/MainHome.html" method="get">
+                <fieldset>
+                    <label for="email">이메일 주소</label>
+                    <input type="email" id="email" placeholder="이메일 주소를 입력하세요" /> <br />
+
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" placeholder="비밀번호를 입력하세요" /><br />
+                    
+                    <a href="../public/MainHome.html">
+                        <input type="submit" value="로그인" />
+                    </a>
+            </form>
+        </article>
         <script src="../src/scripts/Login.js"></script>
     </body>
 </html>

@@ -3,10 +3,46 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>SignUp</title>
         <link rel="stylesheet" href="../src/css/SignUp.css" />
     </head>
     <body>
+        <header>
+            <div id="header">
+                <a href="../public/MainHome.html"><img src="../src/assets/images/Preview.png" /></a>
+            </div>
+        </header>
+        <article>
+            <form action="../public/MainHome.html" method="get">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <label for="name">성함</label>
+                    <input type="text" id="name" placeholder="성함을 입력하세요" /><br />
+
+                    <label for="birth">생년월일</label>
+                    <input type="date" id="birth" /><br />
+
+                    <label for="email">이메일 주소</label>
+                    <input type="email" id="email" placeholder="이메일 주소를 입력하세요" /> <br />
+
+                    <label for="phone_num">전화번호</label>
+                    <input type="tel" id="phone_num" placeholder="전화번호를 입력하세요" /><br />
+
+                    <label for="gender">성별</label>
+                    <div id="gender-options">
+                        <input type="radio" name="gender" value="0" id="male" />
+                        <label for="male">남성</label>
+                        <input type="radio" name="gender" value="1" id="female" />
+                        <label for="female">여성</label>
+                    </div>
+
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" placeholder="비밀번호를 입력하세요" /><br />
+
+                    <input type="submit" value="확인" />
+                </fieldset>
+            </form>
+        </article>
         <script src="../src/scripts/SignUp.js"></script>
     </body>
 </html>
