@@ -1,0 +1,81 @@
+/* OuterClothList.css */
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* 헤더 스타일 */
+header #header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header #header a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header #header a:hover {
+    text-decoration: underline;
+}
+
+header #header img {
+    vertical-align: middle;
+    height: 40px;
+}
+
+/* 아티클 스타일 */
+article #article {
+    padding: 20px;
+}
+
+#outer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* 상품 카드 스타일 */
+.outer {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.outer:hover {
+    transform: translateY(-5px);
+}
+
+.outer img.outer-img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.outer-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.outer-name {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.outer-price {
+    color: #e74c3c;
+    font-size: 1.1em;
+    margin: 5px 0 0;
+}
