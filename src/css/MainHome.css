@@ -23,6 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 22px;
 }
 
 #header a {
