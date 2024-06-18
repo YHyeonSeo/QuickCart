@@ -3,10 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="../src/css/MyPage.css" />
+        <title>SignUp</title>
+        <link rel="stylesheet" href="../src/css/SignUp.css" />
     </head>
     <body>
-        <script src="../src/scripts/MyPage.js"></script>
+        <header>
+            <div id="header">
+                <a href="../public/MainHome.html"><img src="../src/assets/images/Preview.png" /></a>
+            </div>
+        </header>
+        <article>
+            <form id="signupForm" action="../public/MainHome.html" method="get">
+                <fieldset>
+                    <legend>내 정보 확인</legend>
+                    <label for="name">성함</label>
+                    <input type="text" id="name" name="name" value="윤현서" /><br />
+
+                    <label for="birth">생년월일</label>
+                    <input type="date" id="birth" name="birth" value="204-02-20" /><br />
+
+                    <label for="email">이메일 주소</label>
+                    <input type="email" id="email" name="email" name="email" value="gustj7038@gmail.com" />
+                    <br />
+
+                    <label for="phone_num">전화번호</label>
+                    <input type="tel" id="phone_num" name="phone_num" value="010-0000-0000" /><br />
+
+                    <label for="gender">성별</label>
+                    <div id="gender-options">
+                        <input type="radio" name="gender" value="0" id="male" />
+                        <label for="male">남성</label>
+                        <input type="radio" name="gender" value="1" id="female" />
+                        <label for="female">여성</label>
+                    </div>
+
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" value="1234" /><br />
+                </fieldset>
+            </form>
+        </article>
     </body>
 </html>
