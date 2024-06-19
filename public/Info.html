@@ -1,11 +1,41 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>다음 지도 API</title>
+        <title>Info</title>
+        <link rel="stylesheet" href="../src/css/Info.css" />
     </head>
     <body>
-        <div id="map" style="width: 750px; height: 350px"></div>
-
+        <header>
+            <div id="header">
+                <a href="../public/MainHome.html"><img src="../src/assets/images/Preview.png" /></a>
+                <a href="../public/ClothCategory.html">카테고리별 상품 보기</a>
+                <a href="../public/MyPage.html">마이페이지</a>
+                <a href="../public/Info.html">쇼핑몰 정보</a>
+                <a href="../public/SignUp.html">회원가입</a>
+                <a href="../public/Login.html">로그인</a>
+            </div>
+        </header>
+        <article>
+            <div id="map"></div>
+            <div id="info">
+                <ul>
+                    <li>
+                        위치<span class="content"><br />숙명여자대학교 - 서울특별시 용산구 청파로47길 100</span>
+                    </li>
+                    <br />
+                    <li>
+                        연락처<br />
+                        <span class="content">02-710-9114</span>
+                    </li>
+                    <br />
+                    <li>
+                        이메일<br />
+                        <span class="content">aaaa@sookmyung.ac.kr</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <div id="ask">문의하기: 010-000-000</div>
         <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4b9c953a26206ed846149b1774802147"></script>
         <script>
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div

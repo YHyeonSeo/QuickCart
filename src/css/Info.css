@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: rgb(66, 100, 66);
+    color: #fff;
+    padding: 10px 0;
+}
+
+#header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* 마우스 올리면 밑줄 */
+#header a:hover {
+    text-decoration: underline;
+}
+
+article {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+#map {
+    background-color: gray;
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+}
+
+#info ul {
+    /* max-width: 300px; */
+    margin-left: 40px;
+    margin-top: 30px;
+    /* line-height: 3em; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info .content {
+    line-height: -5em;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#ask {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
